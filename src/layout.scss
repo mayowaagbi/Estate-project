@@ -1,13 +1,15 @@
 @import "./responsive.scss";
 
 .Layout {
-  background-color: rebeccapurple;
+  background-color: #fcf5f3;
   height: 100vh;
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
   // @include small{background-color: red;}
   @include large {
     background-color: coral;
@@ -20,5 +22,9 @@
   @include small {
     background-color: white;
     max-width: 640px;
+  }
+  .content {
+    flex: 1;
+    // height: calc(100vh-100px);
   }
 }
